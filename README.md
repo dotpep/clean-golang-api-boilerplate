@@ -1,6 +1,19 @@
 # Golang Clean Codebase/Dirs structure for web/api (boilerblate, template and example)
 
+**Links:**
+
 [Standard Go Project Layout](https://github.com/golang-standards/project-layout)
+
+**Additional:**
+
+Maksim Zhashkevych:
+
+- [Архитектура Golang приложений](https://youtu.be/B0lV7I3FO4E?si=LfsTeVrr0yg8tovP)
+- [Архитектура Golang Приложений 2022 | Чистая Архитектура](https://youtu.be/mesl2Si6saw?si=oGpNN1eaaAT-clDd)
+
+Oleg Kozyrev:
+
+- [Чистая архитектура проекта на Golang](https://youtu.be/e-D28OoWsOg?si=pT_Es_QyhHDCLuco)
 
 ## Notes
 
@@ -35,5 +48,3 @@ Also we can divide our Dev stage docker-compose into: `/docker_compose/app.yml` 
 
 we can store all tests in Top level layer: `/tests` or `/test`,
 and also we can store tests in `/internal` like specific for Unit Tests and then Integrate tests will be in Top layer `/tests` and Unit tests in `/internal/tests/some_unit_tests.go`
-
-###
