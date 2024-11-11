@@ -26,7 +26,8 @@ Questions:
     - `middleware`
     - `handlers` or `controllers`
     - `route`/`router` or `endpoint` or `???`
-    - `/config` or `/setting` or `/???` (`CORS`, `NewApp` or `NewServer`, `DB connection`, `Parsing .env`)
+    - `/config` or `/setting` or `/???` (`CORS`, `NewApp` or `NewServer`, `DB connection`, `Parsing .env`, `DI Container`)
+    - `filters` and `paginations`
 - where to store? (of clean architecture):
     - `interfaces`???
     - `core`/`domain` or `entities` or `valueobjects` (also `converters`)
@@ -51,3 +52,30 @@ Questions:
     - DI (Dependency Injection) or it is not nessacary thing?
     - logging, logging levels, how to throw it from bottom to top layers
     - constants and error messages?
+    - is needed to make in api layer `ApiResponse` schema? (or there is another wrappers for that `PaginationOut`/`PaginationIn`, `ListPaginatedResponse`, `AuthInSchema`/`AuthOutSchema`/`TokenInSchema`/`TokenOutSchema`, `ProductSchema` that helps to make response more elite, custimizable and etc.)
+    - validation, serialization and etc. things
+
+---
+
+VS:
+
+```txt
+- http/v1/
+    - /handler
+        - ???
+    - /route
+        - ???
+```
+
+vs
+
+```txt
+- http/v1/
+    - /customers
+        - handlers.go
+        - schemas.go
+    - /products
+        - handlers.go
+        - schemas.go
+    - routes.go
+```
