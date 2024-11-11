@@ -1,0 +1,15 @@
+http:
+  port: 8000
+  maxHeaderBytes: 1
+  readTimeout: 10s
+  writeTimeout: 10s
+
+cache:
+  ttl: 3600s
+
+mongo:
+  databaseName: examplePlatform
+
+auth:
+  accessTokenTTL: 15m
+  refreshTokenTTL: 43200m #30 days
