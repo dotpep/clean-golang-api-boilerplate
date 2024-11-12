@@ -2,7 +2,8 @@
 
 **Links:**
 
-[Standard Go Project Layout](https://github.com/golang-standards/project-layout)
+- [GitHub repo - Standard Go Project Layout](https://github.com/golang-standards/project-layout)
+- [GitHub repo - About: Go-blueprint allows users to spin up a quick Go project using a popular framework (Golang Project generator like Maven/Grandle, Django, npm React and etc.)](https://github.com/Melkeydev/go-blueprint)
 
 **Additional:**
 
